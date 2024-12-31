@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <div class="contenedor">
+        <section class="pantalla" id="pantalla">
+            0
+        </section>
+
+        <section class="contenedor-boton">
+            <!-- fila 1 de botones [c | -> | /]-->
+            <div class="fila-boton">
+                <button class="boton" onclick="eliminarTexto();">C</button>
+
+                <button class="boton" onclick="escribirPantalla()">&larr;</button>
+
+                <button class="boton" onclick="escribirPantalla('&divide;');">&divide;</button>
+            </div>
+
+            <div class="fila-boton">
+                <button class="boton" onclick="escribirPantalla('7');">7</button>
+
+                <button class="boton" onclick="escribirPantalla('8');">8</button>
+
+                <button class="boton" onclick="escribirPantalla('9');">9</button>
+
+                <button class="boton" onclick="escribirPantalla('x');">x</button>
+            </div>
+            
+            <div class="fila-boton">
+                <button class="boton" onclick="escribirPantalla('4');">4</button>
+
+                <button class="boton"onclick="escribirPantalla('5');">5</button>
+
+                <button class="boton"onclick="escribirPantalla('6');">6</button>
+
+                <button class="boton"onclick="escribirPantalla('-');">-</button>
+            </div>
+
+            <div class="fila-boton">
+                <button class="boton"onclick="escribirPantalla('1');">1</button>
+
+                <button class="boton"onclick="escribirPantalla('2');">2</button>
+
+                <button class="boton"onclick="escribirPantalla('3');">3</button>
+
+                <button class="boton"onclick="escribirPantalla('+');">+</button>
+            </div>
+
+            <div class="fila-boton">
+                <button class="boton" onclick="escribirPantalla('0');">0</button>
+
+                <button class="boton" onclick="escribirPantalla('.');">.</button>
+
+                <button class="boton" onclick="resolverOperación()">=</button>
+
+            </div>
+
+        </section>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
